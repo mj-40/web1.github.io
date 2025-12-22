@@ -1,0 +1,87 @@
+.body{
+    background-image: url(https://netwebtechnologies.com/wp-content/uploads/2023/08/talabat-like-apps.png);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card{
+    margin-top: -0.6%;
+    background-color:rgba(0, 0, 0, 0.717);
+    max-width:800vh;
+    width:75vh;
+    height: 100vh;
+}
+.Create{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 3%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 4vh;
+}
+.input{
+    border-style: none;
+    width: 45vh;
+    height: 4vh;
+    border-radius: 15vh;
+    background-color: rgb(205, 205, 205);
+}
+.OR{
+    color: white;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.button-google{
+    width: 45vh;
+    height: 4vh;
+    border-radius: 15vh;
+    border-style: none;
+}
+.button-facebook{
+    width: 45vh;
+    height: 4vh;
+    border-radius: 15vh;
+    border-style: none;
+    background-color: rgb(78, 78, 254);
+    color: white;
+}
+.img-button{
+    width: 2.5vh;
+    float: inline-start;
+}
+
+.Box{
+    color: white;
+    font-family: sans-serif;
+}
+.By{
+    color: white;
+    font-family: sans-serif;
+    font-size: 50%;
+}
+.Privacy{
+    color: rgb(80, 80, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 50%;
+}
+.terms{
+    color: rgb(80, 80, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 50%;
+}
+.button-Create2{
+    width: 45vh;
+    height: 4vh;
+    border-radius: 15vh;
+    border-style: none;
+    background-color: rgb(78, 78, 254);
+    color: white;
+}

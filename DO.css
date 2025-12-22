@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(1200px-قبة_الصخرة_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.FirstDiv {
+    position: fixed;
+    padding: 3.5px 0;
+    z-index: 100;
+    background: linear-gradient(to left, red, black, green, white);
+    min-width: 100.1%;
+    height: 0.7vh;
+}
+
+.omg-pe {
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9% 0.9%;
+    box-shadow: 1px 1px 1px;
+    background-color: rgba(65, 65, 65, 0.251);
+    color: aquamarine;
+
+}
+
+.logo-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 🔥 هذه المسافة */
+
+    margin: 0.9% 0.7%;
+    padding: 6px 10px;
+
+    background: rgba(0, 0, 0, 0.621);
+    box-shadow: 1px 1px 1px;
+    border-radius: 8px;
+}
+
+.logo-box b {
+    color: rgb(228, 228, 228);
+    text-align: center;
+}
+
+.logo-box-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0.9% 1%;
+    padding: 15px 35px;
+
+    background: rgba(0, 0, 0, 0.621);
+    box-shadow: 1px 1px 1px;
+    border-radius: 8px;
+}
+
+.logo-box a {
+    color: rgb(228, 228, 228);
+}
+
+nav .nav-menu {
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 27%;
+    box-shadow: 1px 1px 1px;
+    min-width: 50%;
+    min-height: 9vh;
+    background: rgba(0, 0, 0, 0.644);
+    box-shadow: 1px 1px 1px;
+    border-radius: 8px;
+}
+
+nav .nav-menu li {
+    list-style-type: none;
+}
+
+nav .nav-menu li a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(201, 201, 201);
+    width: 80%;
+}
+
+.Boss {
+    border-style: ridge;
+    border-color: brown;
+    height: 8vh;
+}
+
+nav .sidebar {
+    display: none;
+}
+
+.drop {
+    display: inline-block;
+}
+
+.drop li {
+    cursor: pointer;
+}
+
+.drop .cont {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    height: 10vh;
+    box-shadow: 3px 3px 15px rgba(250, 0, 0, 0.402);
+}
+
+.drop:hover .cont {
+    transition: 0.5s;
+    display: grid;
+    background: rgba(0, 0, 0, 0.621);
+    border-radius: 12px;
+}
+
+.cont a {
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    text-align: center;
+}
+
+.cont a:hover {
+    font-size: large;
+}
+
+nav .nav-menu li#showSidebar a {
+    display: none;
+}
+
+.title-box {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 42vh;
+    /* يخلي النص في منتصف الشاشة */
+}
+
+.title-box h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0px;
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+}
+
+.title a {
+    box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.779);
+    background: linear-gradient(rgba(0, 0, 0, 0.74));
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 600;
+    color: rgb(219, 219, 219);
+    line-height: 1.6;
+}
+
+.title img {
+    float: right;
+    box-shadow: 3px 3px 20px rgb(5, 5, 5);
+}
+
+@media screen and (max-width:600px) {
+    nav .nav-menu li a {
+        display: none;
+    }
+
+    nav .nav-menu li#showSidebar a {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    body {
+        background-image: url(Untitled222.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition-duration: 0.9s;
+        min-height: 89vh;
+    }
+
+    nav .nav-menu li a {
+        display: none;
+    }
+
+    nav ul {
+        display: inline-flex;
+        justify-content: start;
+    }
+
+    nav .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3%;
+        min-width: 20%;
+        min-height: 9%;
+        transform: translateX(-375%);
+        transition: transform 0.5s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .logo-box {
+        display: flex;
+        margin: 3%;
+        width: 55%;
+        transform: ();
+        transition: transform 0.5s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .logo-box-1 {
+        display: none;
+    }
+
+    .sidebar {
+        list-style-type: none;
+        display: block;
+        transform: translateX(-182%);
+        transition: transform 0.5s ease;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 135px;
+        height: auto;
+        z-index: 999;
+        margin: 75px 0px 0px 0px;
+        background-color: rgba(0, 0, 0, 0.603);
+        box-shadow: 12px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar li a {
+        color: rgba(255, 255, 255, 0.865);
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .cont {
+        display: none;
+    }
+
+}
