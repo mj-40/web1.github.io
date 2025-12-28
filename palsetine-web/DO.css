@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(white2-1.png);
+    background-repeat: no-repeat;
+    
+}
+
+.FirstDiv {
+    position: fixed;
+    padding: 3.5px 0;
+    z-index: 100;
+    background: linear-gradient(to left, red, black, green, white);
+    min-width: 100.1%;
+    height: 0.7vh;
+}
+
+nav {
+  top: 7px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between; /* Logo on right, nav on left */
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+  direction: rtl;
+}
+
+/* Logo aligned to the right */
+.logo {
+  display: flex;
+  justify-content: flex-end; /* Stick to right */
+  align-items: center;
+  gap: 10px;
+}
+
+/* Desktop menu aligned left of the logo */
+ul.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start; /* Align left side of logo */
+}
+
+ul.main-nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 15px 10px;
+  display: block;
+  font-weight: 500;
+  text-align: right;
+}
+ul.main-nav li .First-a{
+    border-width: 1.5px;
+    border-radius: 5px;
+    border-style: inset;
+    border-color: red;
+}
+.logo img {
+  height: 45px;
+}
+.logo b {
+  font-size: 18px;
+}
+
+ul.main-nav li a:hover {
+  color: red;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Desktop Dropdown */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 130px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  right: 0;
+  z-index: 999;
+  border-radius: 8px;
+}
+.dropdown:hover .content {
+  display: block;
+}
+.dropdown .content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: right;
+}
+.dropdown .content a:hover {
+  color: red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 52px;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.sidebar li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  cursor: pointer;
+  text-align: right;
+}
+.sidebar li a:hover {
+  color: red;
+}
+
+
+/* Sidebar dropdown */
+.sidebar .dropdown-sidebar .sub-menu {
+  display: none;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.sidebar .dropdown-sidebar.active .sub-menu {
+  display: flex;
+}
+
+/* Hamburger */
+#showSidebar {
+  display: none;
+  cursor: pointer;
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+}
+
+.title-box {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* يخلي النص في منتصف الشاشة */
+}
+
+.title a {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.779);
+    background: linear-gradient(rgba(0, 0, 0, 0.838));
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 600;
+    color: rgb(219, 219, 219);
+    line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden; 
+  direction: rtl;
+  text-align: right;
+}
+
+.title img {
+    float: right;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.779);
+}
+
+.Hr{
+    text-decoration: none;
+    margin-top: 50px;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align:end;
+}
+.Hr a{
+    text-decoration: none;
+    font-size: large;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    margin: 14px 40px;
+}
+.Hr hr{
+    width: 154vh;
+    height: 0.3vh;
+    background-color: rgb(152, 0, 0);
+    align-items: start;
+    border-style: none;
+}
+.Hr h1{
+    float: right;
+    color: rgb(27, 27, 27);
+}
+
+.Boxes{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.box1{
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.779);
+    background: linear-gradient(rgba(0, 0, 0, 0.838));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 10px;
+}
+.Yasser{
+    border-radius: 12px;
+    width:97%;
+    display: flex;
+    box-shadow: 3px 3px 20px black;
+}
+.box1 a{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    direction: rtl;
+    text-align: right;
+    color: rgb(224, 224, 224);
+    padding: 12px;
+}
+.box1 h1{
+    color: rgb(224, 224, 224);
+    font-size: 30px;
+}
+.button-y{
+    position:static;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.986);
+    border-radius: 8px;
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    text-align: right;
+}
+.button-y a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.button-y:hover{
+    background-color: rgb(211, 0, 0);
+    font-size: 20px;
+}
+
+.box2{
+    width: 45%;
+    height: 20%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.779);
+    background: linear-gradient(rgba(0, 0, 0, 0.838));
+    gap: 10px;
+}
+
+.box2 a{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden; 
+  direction: rtl;
+  text-align: right;
+    color: rgb(224, 224, 224);
+}
+.box2 h1{
+    color: rgb(224, 224, 224);
+    font-size: 30px;
+}
+
+.Abo-Mazen{
+    border-radius: 12px;
+    width:97%;
+    display: flex;
+    box-shadow: 3px 3px 20px black;
+}
+
+.button-m{
+    position:static;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.986);
+    border-radius: 8px;
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.button-m a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.button-m:hover{
+    background-color: rgb(211, 0, 0);
+    font-size: 20px;
+}
+
+.big-box{
+    width:100%;
+    height: 50vh;
+    background: linear-gradient(rgb(199, 0, 0),rgb(31, 31, 31));
+    display: flex;
+    justify-content: end;
+    margin-top: 10%;
+}
+.icons{
+    display:inline-flex;
+    align-items: end;
+    justify-content: start;
+    padding-bottom: 30px;
+    margin-right: 170px;
+}
+.whatsapp{
+    float: left;
+    width: 40px;
+    padding-right:10px ;
+    display: inline-flex;
+    margin: 12px;
+}
+.facebook{
+    width: 45px;
+    margin: 5px;
+    padding-right:10px ;
+}
+.messenger{
+    width: 45px;
+    padding-right:10px;
+    margin: 4px;
+}
+.icons img:hover{
+    width: 50px;
+}
+.s-box1 {
+    margin-right: 40px;
+    width: 35%;
+    text-align: end;
+    margin-top: 20px;
+    font-size: larger;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s-box1 ul{
+    display: inline-block;
+    list-style:none;
+}
+.s-box1 ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1;
+    display:grid;
+}
+
+.s-box ul{
+    display: inline-block;
+    list-style:none;
+}
+.s-box ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2;
+    display:grid;
+}
+.s-box ul a:hover{
+    color: rgb(255, 8, 8);
+    transform: ;
+    font-size: 22px;
+}
+.first-a{
+    font-size: larger;
+}
+.s-box {
+    margin-right: 40px;
+    width: 20%;
+    text-align: end;
+    margin-top: 20px;
+    font-size: larger;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(rgb(15, 0, 0),rgb(94, 0, 0));
+    display: block;
+    clear: both;
+    padding: 15px;
+}
+footer a{
+    gap: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer img{
+    background: linear-gradient(black);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  ul.main-nav {
+    display: none;
+  }
+  #showSidebar {
+    display: block;
+  }
+
+    ul.sidebar li .First-a{
+        color: rgb(188, 0, 0);
+    }
+
+    .title-box {
+        height: 15vh;
+    }
+
+    .title {
+        gap: 7px;
+    }
+    .title img {
+        width: 30%;
+        box-shadow: 3px 3px 20px rgb(5, 5, 5);
+    }
+    .title a{
+        padding: 5px;
+    }
+
+
+    .Hr hr{
+        width: 120vh;
+    }
+
+    .Hr h1{
+        font-size: 25px;
+    }
+    
+    .Boxes h1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav .nav-menu li a {
+        display: none;
+    }
+
+    nav .nav-menu li#showSidebar a {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .cont {
+        display: none;
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+    }
+
+    .title {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .title a {
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.779);
+        background: linear-gradient(rgba(0, 0, 0, 0.74));
+        background-color: rgba(0, 0, 0, 0.74);
+        width: 87%;
+    }
+
+    .title img {
+        width: 87%;
+        box-shadow: 3px 3px 20px rgb(5, 5, 5);
+    }
+
+    .Hr hr{
+        width: 24vh;
+    }
+
+    .Hr h1{
+        font-size: 20px;
+    }
+
+    .box1{
+        width: 87%;
+    }
+    .box1 h1{
+        font-size: 20px;
+    }
+    .box2{
+        display: none;
+    }
+
+
+    .big-box{
+        margin-top: 80px;
+        height: 350px;
+    }
+    .icons{
+        display:inline-flex;
+        align-items: end;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-right: -300px;
+    }
+
+    .s-box1 {
+        margin-right: 70px;
+        width: 47%;
+        text-align: end;
+        margin-top: 20px;
+        font-size: larger;
+    }
+    .s-box1 ul a{
+        line-height: 1;
+    }
+    .s-box1 a{
+        font-size: 10px;
+    }
+    .s-box1 hr{
+        width: 24vh;
+        height: 0.1vh;
+        background-color: white;
+        align-items: start;
+        border-style: none;
+    }
+    .first-a{
+        font-size: 13px;
+    }
+
+    .s-box{
+        width: 26%;
+    }
+    .s-box ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 3;
+    display:grid;
+    font-size: 10px;
+    display:block;
+    }
+    .s-box hr{
+        height: 0.1vh;
+        background-color: white;
+        align-items: start;
+        border-style: none;
+    }
+}
