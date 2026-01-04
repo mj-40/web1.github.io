@@ -170,10 +170,11 @@ ul.main-nav li a:hover {
 
 .title {
     display: flex;
-    gap: 20px;
+    gap: 5px;
+    margin: 0px 40px;
 }
 .title a {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.779);
+    box-shadow: 2.5px 10px 3px black;
     background: linear-gradient(rgba(0, 0, 0, 0.838));
     float: left;
     box-sizing: border-box;
@@ -191,11 +192,11 @@ ul.main-nav li a:hover {
     overflow: hidden; 
     direction: rtl;
     text-align: right;
-    padding: 5px;
+    padding: 0px 10px;
 }
 .title img {
     float: right;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.779);
+    box-shadow: 2.5px 10px 3px black;
 }
 
 .big-box{
@@ -219,16 +220,19 @@ ul.main-nav li a:hover {
     padding-right:10px ;
     display: inline-flex;
     margin: 12px;
+    transition: 0.3s ease;
 }
 .facebook{
     width: 45px;
     margin: 5px;
-    padding-right:10px ;
+    padding-right: 10px;
+    transition: 0.3s ease;
 }
 .messenger{
     width: 45px;
     padding-right:10px;
     margin: 4px;
+    transition: 0.3s ease;
 }
 .icons img:hover{
     width: 50px;
@@ -267,7 +271,7 @@ ul.main-nav li a:hover {
 }
 .s-box ul a:hover{
     color: rgb(255, 8, 8);
-    transform: ;
+    transition: 0.3s ease;
     font-size: 22px;
 }
 .first-a{

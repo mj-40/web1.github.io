@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header {
+    position: relative;
+}
+
+.top-header h2{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    direction: rtl;
+    margin: 15px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-header img {
+    position: absolute;
+    top: -10px;
+    right: 40%;
+}
+
+.top-header-1 {
+    position: relative;
+}
+
+.top-header-1 h2{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    margin: 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#top-header-1-h2-1{
+    position: absolute;
+    top: -84px;
+    left: 0;
+}
+
+#top-header-1-h2-2{
+    position: absolute;
+    top: -43px;
+    left: 0;
+}
+
+/* A row contains 4 cells: EN label, EN input, AR label, AR input */
+.form-row {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px 1fr; /* tweak widths */
+    gap: 8px 14px; /* row-gap col-gap */
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* Make English read left-to-right and Arabic right-to-left */
+.label-en, .input-en { direction: ltr; text-align: left; }
+.label-ar, .input-ar { direction: rtl; text-align: right; }
+
+/* Optional styling */
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+/* Make both halves the same width */
+.row > .en,
+.row > .ar {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 180px 0fr; /* label + input inside each side */
+    gap: 0px;
+}
+
+/* Text directions */
+.en { direction: ltr; }
+.ar { direction: rtl; }
+
+#ID{
+    gap: 10px;
+    margin-left: 38px;
+}
+#ID-ar{
+    width: 25%;
+    text-align: center;
+}
+
+#NAME {
+    margin-left: 100px;
+    gap: 10px;
+}
+
+#FATHER {
+    margin-left: -10px;
+    gap: 10px;
+}
+
+#GRANDFATHERS {
+    margin-left: -72px;
+    gap: 10px;
+}
+
+#FAMILYNAME {
+    margin-left: 11px;
+    gap: 10px;
+}
+
+#MOTHERSNAME {
+    margin-left: -25px;
+    gap: 10px;
+}
+
+#DATE {
+    margin-left: 16px;
+    gap: 10px;
+}
+#DATE-ar, #DATE-en {
+    width: 13.1%;
+}
+
+#PLACEBIRTH {
+    margin-left: 2px;
+    gap: 10px;
+}
+
+#SEX {
+    margin-left: 30px;
+    gap: 5px;
+}
+
+#PROFESSION {
+    margin-left: 1px;
+    gap: 10px;
+}
+
+#CITY {
+    margin-left: 63px;
+    gap: 10px;
+}
+
+#TELEPHONE {
+    margin-left: 2px;
+    gap: 10px;
+}
+
+.aside {
+    border-style: groove;
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    align-items: start;
+    float: right;
+    margin: 10px 10px;
+    border-radius: 7px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+}
+
+.aside h2 {
+    margin: 7px;
+}
+
+.aside p {
+    margin: 15px 0px;
+}
+
+.aside-1 {
+    border-style: groove;
+    width: 30%;
+    height: 20vh;
+    margin: 10px 20px;
+    border-radius:7px ;
+    text-align: end;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: ltr;
+    float: right;
+}
+
+.aside-1 h2 {
+    font-size: medium;
+    margin: 7px;
+}
+
+.aside-2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+    float: right;
+}
+
+.aside-2 h2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+    text-align: center;
+}
+
+.aside-2 p {
+    margin: 10px 10px;
+    line-height: 1.4;
+}
+
+.aside-2-input {
+    border-style: none;
+    border-bottom-style: inset;
+    outline: none;
+    border-color: black;
+}
