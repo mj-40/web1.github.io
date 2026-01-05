@@ -378,3 +378,11 @@
     size: A4; /* or letter */
     margin: 10mm;
 }
+
+@media print {
+  .page-break {
+    page-break-after: always; /* Forces a new page after this element */
+    /* For modern browsers, you can also use: */
+    break-after: page;
+  }
+}
