@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سفارة دولة فلسطين في الرياض - الأخبار والتطورات</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../images/logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="FirstDiv"></div>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.Kr1Hru7Q6ygDQXwMJU5f7wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Logo"
+          />
+          <b>سفارة دولة فلسطين في الرياض</b>
+        </div>
+
+        <ul class="main-nav">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li class="dropdown">
+            <a>عن السفارة</a>
+            <div class="content">
+              <a href="About.html">كلمة السفير</a>
+            </div>
+          </li>
+          <li><a href="services.html">معاملات الشؤون القنصلية</a></li>
+          <li><a class="active">الاخبار والتطورات</a></li>
+        </ul>
+
+        <!-- Desktop menu -->
+        <ul class="main-nav">
+          <li>
+            <a href="Login.html"
+              >تسجيل الدخول
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                style="margin-left: 5px"
+              >
+                <path
+                  d="M10 1a1 1 0 0 1 1 1v3h-1V2H4v12h6v-3h1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6z"
+                />
+                <path
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L14.293 7.5H7.5a.5.5 0 0 0 0 1h6.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Hamburger -->
+        <div id="showSidebar">
+          <svg
+            width="27px"
+            height="27px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <!-- Sidebar menu for mobile -->
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a>
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5 17L9.5 12L14.5 7"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a class="First-a" href="index.html">الرئيسية</a></li>
+
+        <li class="dropdown-sidebar">
+          <a onclick="toggleSubmenu(this)">عن السفارة ▾</a>
+          <ul class="sub-menu">
+            <li><a href="About.html">كلمة السفير</a></li>
+          </ul>
+        </li>
+
+        <li><a href="services.html">معاملات الشؤون القنصلية</a></li>
+        <li><a>الاخبار والتطورات</a></li>
+        <li><a href="Login.html">تسجيل الدخول</a></li>
+      </ul>
+    </header>
+
+    <div
+      class="title-box"
+      id="news-img"
+      style="background-image: url('jaffa.jpg')"
+    >
+    </div>
+
+        <main>
+      <div class="Boxes">
+        <div class="box">
+          <img src="قبة الصخرة 2.jpg" alt="Abo-Ammar" />
+          <h2>محمود رضا عباس</h2>
+          <a
+            >مؤسس حركة فتح عام 1959 التي اصبحت لاحقا العمود الفقري للنضال
+            الفلسطيني يعتبر ابو عمار من ابرز السخصيات السياسية في تاريخ الشرق
+            الاوسط ترك ارثا سياسيا وشعبيا كبيرا
+          </a>
+          <div class="button">
+            <a href="newsDetails.html">
+              تعرف أكثر
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="20" y1="12" x2="4" y2="12"></line>
+                <polyline points="10 6 4 12 10 18"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="قبة الصخرة 2.jpg" alt="Abo-Ammar" />
+          <h2>محمود رضا عباس</h2>
+          <a
+            >مؤسس حركة فتح عام 1959 التي اصبحت لاحقا العمود الفقري للنضال
+            الفلسطيني يعتبر ابو عمار من ابرز السخصيات السياسية في تاريخ الشرق
+            الاوسط ترك ارثا سياسيا وشعبيا كبيرا
+          </a>
+          <div class="button">
+            <a href="newsDetails.html">
+              تعرف أكثر
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="20" y1="12" x2="4" y2="12"></line>
+                <polyline points="10 6 4 12 10 18"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="قبة الصخرة 2.jpg" alt="Abo-Ammar" />
+          <h2>محمود رضا عباس</h2>
+          <a
+            >مؤسس حركة فتح عام 1959 التي اصبحت لاحقا العمود الفقري للنضال
+            الفلسطيني يعتبر ابو عمار من ابرز السخصيات السياسية في تاريخ الشرق
+            الاوسط ترك ارثا سياسيا وشعبيا كبيرا
+          </a>
+          <div class="button">
+            <a href="newsDetails.html">
+              تعرف أكثر
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="20" y1="12" x2="4" y2="12"></line>
+                <polyline points="10 6 4 12 10 18"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="قبة الصخرة 2.jpg" alt="Abo-Ammar" />
+          <h2>محمود رضا عباس</h2>
+          <a
+            >مؤسس حركة فتح عام 1959 التي اصبحت لاحقا العمود الفقري للنضال
+            الفلسطيني يعتبر ابو عمار من ابرز السخصيات السياسية في تاريخ الشرق
+            الاوسط ترك ارثا سياسيا وشعبيا كبيرا
+          </a>
+          <div class="button">
+            <a href="newsDetails.html">
+              تعرف أكثر
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="20" y1="12" x2="4" y2="12"></line>
+                <polyline points="10 6 4 12 10 18"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="قبة الصخرة 2.jpg" alt="Abo-Ammar" />
+          <h2>محمود رضا عباس</h2>
+          <a
+            >مؤسس حركة فتح عام 1959 التي اصبحت لاحقا العمود الفقري للنضال
+            الفلسطيني يعتبر ابو عمار من ابرز السخصيات السياسية في تاريخ الشرق
+            الاوسط ترك ارثا سياسيا وشعبيا كبيرا
+          </a>
+          <div class="button">
+            <a href="newsDetails.html">
+              تعرف أكثر
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="20" y1="12" x2="4" y2="12"></line>
+                <polyline points="10 6 4 12 10 18"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="big-box">
+        <div class="s-box1">
+          <b class="first-a">السفارة الفلسطينية في الرياض</b>
+          <hr />
+          <ul>
+            <li><a>رقم الهاتف : 4880744 11 - 48101723 011</a></li>
+            <li><a>لحالات الوفيات فقط : 4880744 11 </a></li>
+            <li><a>البريد الالكتروني</a></li>
+            <li id="Location-Embassy-palestine">
+              <a
+                href="https://www.google.com/maps/place/Embassy+of+Palestine/@24.6835994,46.6370363,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f1cf07b3e8713:0xb29127c35d59ae8d!8m2!3d24.6835945!4d46.6396112!16s%2Fg%2F11h051wrk?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                style="cursor: pointer; text-decoration: underline"
+                >موقع سفارة دولة فلسطين في الرياض</a
+              >
+            </li>
+            <li><a>صندوق البريد : ص.ب 94302 الرياض 11693</a></li>
+          </ul>
+        </div>
+
+        <div class="s-box">
+          <a class="first-a">روابط مهمة</a>
+          <hr />
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li>
+              <a href="About.html">كلمة السفير </a>
+            </li>
+            <li>
+              <a href="services.html">معاملات الشؤون القنصلية</a>
+            </li>
+            <li><a>الاخبار والتطورات</a></li>
+          </ul>
+
+          <!-- Social media icons under links -->
+          <div class="footer-icons">
+            <a href="" target="_blank"
+              ><img
+                class="whatsapp"
+                src="whatsapp.png"
+                alt="WhatsApp"
+            /></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100069185350186"
+              target="_blank"
+              ><img
+                class="facebook"
+                src="facebook (1).png"
+                alt="Facebook"
+            /></a>
+            <a href="https://www.messenger.com" target="_blank"
+              ><img
+                class="messenger"
+                src="messenger.png"
+                alt="Messenger"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <img src="logo.png" />
+        <a> سفارة دولة فلسطين في الرياض </a>
+      </div>
+    </footer>
+
+    <script src="dropdown.js"></script>
+    <script src="script-palestine-4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header {
+    position: relative;
+}
+
+.top-header h2{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    direction: rtl;
+    margin: 15px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-header img {
+    position: absolute;
+    top: -10px;
+    right: 50%;
+}
+
+.top-header-1 {
+    position: relative;
+}
+
+.top-header-1 h2{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    margin: 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#top-header-1-h2-1{
+    position: absolute;
+    top: -84px;
+    left: 0;
+}
+
+#top-header-1-h2-2{
+    position: absolute;
+    top: -43px;
+    left: 0;
+}
+
+/* A row contains 4 cells: EN label, EN input, AR label, AR input */
+.container {
+    position: absolute;
+    top: 150px;
+    grid-template-columns: 180px 1fr 180px 1fr; /* tweak widths */
+    gap: 8px 14px; /* row-gap col-gap */
+    align-items: center;
+}
+
+/* Make English read left-to-right and Arabic right-to-left */
+.label-en, .input-en { direction: ltr; text-align: left; }
+.label-ar, .input-ar { direction: rtl; text-align: right; }
+
+/* Optional styling */
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+/* Make both halves the same width */
+.row > .en,
+.row > .ar {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 180px 0fr; /* label + input inside each side */
+    gap: 0px;
+    outline: none;
+}
+
+/* Text directions */
+.en { direction: ltr; }
+.ar { direction: rtl; }
+
+#ID{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    gap: 10px;
+    margin-left: 38px;
+}
+
+#ID-en {
+    direction: ltr;
+}
+#ID-ar{
+    direction: rtl;
+    width: 15.2%;
+    text-align: center;
+    outline: none;
+}
+
+#NAME {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    margin-left: 100px;
+    gap: 10px;
+    justify-content: center;
+}
+
+#NAME-ar,
+#NAME-en {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    text-align: center;
+    outline: none;
+}
+
+#FATHER {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    margin-left: -10px;
+    gap: 10px;
+}
+
+#FATHER-ar,
+#FATHER-en {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden; 
+    text-align: center;
+    outline: none;
+}
+
+#GRANDFATHERS {
+    margin-left: -72px;
+    gap: 10px;
+}
+
+#GRANDFATHERS-ar,
+#GRANDFATHERS-en {
+    text-align: center;
+    outline: none;
+}
+
+#FAMILYNAME {
+    margin-left: 11px;
+    gap: 10px;
+}
+
+#FAMILYNAME-ar,
+#FAMILYNAME-en {
+    text-align: center;
+    outline: none;
+
+}
+
+#MOTHERSNAME {
+    margin-left: -25px;
+    gap: 10px;
+}
+
+#MOTHERSNAME-ar,
+#MOTHERSNAME-en {
+    text-align: center;
+    outline: none;
+
+}
+
+#DATE {
+    margin-left: 17px;
+    gap: 10px;
+}
+
+#DATE-ar, 
+#DATE-en {
+    width: 7.3%;
+    text-align: center;
+    outline: none;
+}
+
+#PLACEBIRTH {
+    margin-left: 5px;
+    gap: 10px;
+}
+
+#PLACEBIRTH-ar,
+#PLACEBIRTH-en {
+    text-align: center;
+    outline: none;
+
+}
+
+#SEX {
+    margin-left: 30px;
+    gap: 10px;
+}
+
+#SEX-ar,
+#SEX-en {
+    text-align: center;
+    outline: none;
+}
+
+#PROFESSION {
+    margin-left: 1px;
+    gap: 10px;
+}
+
+#PROFESSION-ar,
+#PROFESSION-en {
+    text-align: center;
+    outline: none;
+
+}
+
+#CITY {
+    margin-left: 63px;
+    gap: 10px;
+}
+
+#CITY-ar,
+#CITY-en {
+    text-align: center;
+    outline: none;
+
+}
+
+#TELEPHONE {
+    margin-left: 0px;
+    gap: 10px;
+}
+
+#TELEPHONE-ar,
+#TELEPHONE-en {
+    text-align: center;
+    outline: none;
+}
+
+.aside {
+    border: 1px solid #000;
+    width: 60%;
+    height: 15vh;
+    display: flex;
+    align-items: start;
+    float: right;
+    margin: 10px 10px;
+    border-radius: 7px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+}
+
+.aside h2 {
+    margin: 7px;
+}
+
+.aside p {
+    margin: 15px 0px;
+}
+
+.aside-1 {
+    border: 1px solid #000;
+    width: 30%;
+    height: 15vh;
+    margin: 10px 20px;
+    border-radius:7px ;
+    text-align: end;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: ltr;
+    float: right;
+}
+
+.aside-1 h2 {
+    font-size: medium;
+    margin: 7px;
+}
+
+.aside-2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+    float: right;
+}
+
+.aside-2 h2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+    text-align: center;
+}
+
+.aside-2 p {
+    margin: 10px 10px;
+    line-height: 1.4;
+}
+
+.aside-2-input {
+    text-align: center;
+    border-style: none;
+    border-bottom-style: inset;
+    outline: none;
+    border-color: black;
+}
+
+#aside-2-tel {
+    width: 75px;
+}
+
+.pp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.p {
+    border: 1.4px solid #000;
+    width: 190px;   
+    height: 20vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 10px;
+    top: -17px;
+}
+
+/* Visible on screen */
+.no-print { 
+    display: inline-block;
+    float: left;
+    margin: 10px 100px;
+    width: 10%;
+    height: 6vh;
+    background-color: rgb(0, 58, 26);
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+    font-size: large;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1210px) {
+.top-header h2{
+    margin: 20px 10px;
+    font-size: medium;
+}
+
+.top-header img {
+    position: absolute;
+    top: 0px;
+    right: 41%;
+    width: 13%;
+}
+
+.top-header-1 h2{
+    margin: 5px 10px;
+    font-size: medium;
+}
+
+.pp {
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.p {
+    width: 110px;   
+    height: 17vh;
+}
+
+/* A row contains 4 cells: EN label, EN input, AR label, AR input */
+.container {
+    position: absolute;
+    top: 250px;
+    gap: 5px 10px; /* row-gap col-gap */
+    font-size: small;
+}
+
+#ID{
+    font-size: smaller;
+    gap: 10px;
+    margin-left: 22px;
+}
+
+#ID-ar{
+    width: 48.4%;
+}
+
+#NAME {
+    font-size: smaller;
+    margin-right: 73px;
+    gap: 10px;
+}
+
+#NAME-ar,
+#NAME-en {
+    width: 290.6%;
+}
+
+#FATHER {
+    font-size: smaller;
+    margin-left: -20px;
+    gap: 10px;
+}
+
+#FATHER-ar,
+#FATHER-en {
+    width: 22.2%;
+}
+
+#GRANDFATHERS {
+    font-size: smaller;
+    margin-left: -60px;
+}
+
+#GRANDFATHERS-ar,
+#GRANDFATHERS-en {
+    width: 21%;
+}
+
+#FAMILYNAME {
+    font-size:smaller;
+    margin-left: -3px;
+}
+
+#FAMILYNAME-ar,
+#FAMILYNAME-en {
+    width: 22.6%;
+}
+
+#MOTHERSNAME {
+    font-size: smaller;
+    margin-left: -27px;
+}
+
+#MOTHERSNAME-ar,
+#MOTHERSNAME-en {
+    width: 21.9%;
+}
+
+#DATE {
+    margin-left: -6px;
+}
+
+#DATE-ar, 
+#DATE-en {
+    width: 22.6%;
+}
+
+#PLACEBIRTH {
+    margin-left: -15px;
+}
+
+#PLACEBIRTH-ar,
+#PLACEBIRTH-en {
+    width: 22.4%;
+}
+
+#SEX {
+    margin-left: 12px;
+    gap: 10px;
+}
+
+#PROFESSION {
+    margin-left: -15px;
+}
+
+#PROFESSION-ar,
+#PROFESSION-en {
+    width: 22.4%;
+}
+
+#CITY {
+    margin-left: 36px;
+}
+
+#CITY-ar,
+#CITY-en {
+    width: 24%;
+}
+
+#TELEPHONE {
+    margin-left: -15px;
+}
+
+#TELEPHONE-ar,
+#TELEPHONE-en {
+    width: 22.4%;
+}
+
+.aside-2 p {
+    margin: 10px 10px;
+    line-height: 2;
+}
+
+.aside-2-input {
+    font-size: smaller;
+}
+
+#aside-2-tel {
+    width: 67px;
+}
+
+.no-print { 
+    margin: 10px 40px;
+    width: 20%;
+    font-size: large;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+.top-header h2{
+    margin: 20px 10px;
+    font-size: medium;
+}
+
+.top-header img {
+    position: absolute;
+    top: 0px;
+    right: 40%;
+    width: 13%;
+}
+
+.top-header-1 h2{
+    margin: 5px 10px;
+    font-size: medium;
+}
+
+.pp {
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.p {
+    width: 90px;   
+    height: 15vh;
+}
+
+/* A row contains 4 cells: EN label, EN input, AR label, AR input */
+.container {
+    position: absolute;
+    top: 250px;
+    gap: 5px 10px; /* row-gap col-gap */
+    font-size: small;
+}
+
+#ID{
+    font-size: smaller;
+    gap: 10px;
+    margin-left: 22px;
+}
+
+#ID-ar{
+    width: 48.4%;
+}
+
+#NAME {
+    font-size: smaller;
+    margin-left: 55px;
+    gap: 10px;
+}
+
+#NAME-ar,
+#NAME-en {
+    width: 25%;
+}
+
+#FATHER {
+    font-size: smaller;
+    margin-left: -20px;
+    gap: 10px;
+}
+
+#FATHER-ar,
+#FATHER-en {
+    width: 21.6%;
+}
+
+#GRANDFATHERS {
+    font-size: smaller;
+    margin-left: -60px;
+}
+
+#GRANDFATHERS-ar,
+#GRANDFATHERS-en {
+    width: 20.2%;
+}
+
+#FAMILYNAME {
+    font-size:smaller;
+    margin-left: -2px;
+}
+
+#FAMILYNAME-ar,
+#FAMILYNAME-en {
+    width: 22.4%;
+}
+
+#MOTHERSNAME {
+    font-size: smaller;
+    margin-left: -25px;
+}
+
+#MOTHERSNAME-ar,
+#MOTHERSNAME-en {
+    width: 21.5%;
+}
+
+#DATE {
+    margin-left: -4px;
+}
+
+#DATE-ar, 
+#DATE-en {
+    width: 22.4%;
+}
+
+#PLACEBIRTH {
+    margin-left: -13px;
+}
+
+#PLACEBIRTH-ar,
+#PLACEBIRTH-en {
+    width: 22%;
+}
+
+#SEX {
+    margin-left: 12px;
+    gap: 10px;
+}
+
+#PROFESSION {
+    margin-left: -12px;
+}
+
+#PROFESSION-ar,
+#PROFESSION-en {
+    width: 22%;
+}
+
+#CITY {
+    margin-left: 40px;
+}
+
+#CITY-ar,
+#CITY-en {
+    width: 24.4%;
+}
+
+#TELEPHONE {
+    margin-left: -10px;
+}
+
+#TELEPHONE-ar,
+#TELEPHONE-en {
+    width: 22.2%;
+}
+
+.aside {
+    width: 96%;
+    font-size: smaller;
+}
+
+.aside-1 {
+    width: 96%;
+    margin: 10px 10px;
+}
+
+.aside-2 {
+    width: 100%;
+    text-align: start;
+    line-height: 1.5;
+}
+
+.aside-2 p {
+    margin: 10px 10px;
+    line-height: 2;
+}
+
+.aside-2-input {
+    font-size: smaller;
+    width: 85px;
+}
+
+#aside-2-tel {
+    width: 67px;
+}
+
+.no-print { 
+    margin: 10px 40px;
+    width: 20%;
+    font-size: medium;
+}
+
+}
+
+/* Hidden only when printing or in print preview */
+@media print {
+    .top-header img {
+        right: 55%;
+    }
+
+    .pp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: -40px;
+    }
+
+}
+
+@page {
+    size: A4; /* or letter */
+    margin: 10mm;
+}
+
+/* Hidden only when printing or in print preview */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+
+  /* Scale down content to fit one page */
+    html, body {
+        zoom: 65%; /* Adjust percentage until everything fits */
+        
+    }
+
+    /* Avoid page breaks */
+    .page-break {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    #DATE {
+    margin-left: 16px;
+}
+
+#DATE-ar, 
+#DATE-en {
+    width: 10%;
+}
+
+#ID{
+    font-size: smaller;
+    gap: 10px;
+    margin-left: 38px;
+}
+
+#ID-ar{
+    width: 12.4%;
+}
+
+.top-header img {
+    position: absolute;
+    top: 0px;
+    right: 45%;
+}
+
+}
+
+@page {
+    size: A4; /* or letter */
+    margin: 10mm;
+}
+
+@media print {
+    .page-break {
+        page-break-after: always; /* Forces a new page after this element */
+        /* For modern browsers, you can also use: */
+        break-after: page;
+    }
+}
+
+/*-----------------------------------------------------------*/
+
+.page-2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-items: start;
+    justify-content: start;
+}
+
+.big-box {
+    padding: 10px;
+    margin-top: 45%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    border-style:solid;
+}
+
+.Information-passport {
+    padding: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    direction: rtl;
+    text-align: start;
+}
+
+#endText-p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#p-1 {
+    margin: 10px 10px;
+    font-size: large;
+}
+
+/* Wrapper optional: if you have a container, you can keep the offset you used
+.page { position: relative; top: 130%; padding: 16px; } */
+
+/* Head & data cells */
+
+.table td {
+  width: 500px;
+  padding: 10px 12px;              /* inner spacing inside cells */
+  vertical-align: middle;
+  color: #000;
+  /* Keep long Arabic labels readable */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Slightly dim headers if you use <th> inside rows */
+.table th {
+  font-weight: 700;
+  background: #f7f7f7;
+}
+
+
+/* ===== Inputs inside cells ===== */
+/* Make inputs consistent, with clear space from the text label */
+.table td input[type="text"],
+.table td input[type="checkbox"],
+.table td input[type="tel"],
+.table td input[type="email"],
+.table td input[type="date"],
+.option {
+    outline: none;
+  display: block;              /* force it to a new line under the label */  
+  width: 100%;
+  height: 34px;                /* consistent field height */
+  margin-top: 8px;             /* SPACE between label and input (key piece) */
+  padding: 6px 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+
+#telephone  {
+    width: 188.5%;
+    }
+
+#ID-- {
+    width: 164%;
+}
+
+#job {
+    width: 164%;
+}
+
+#full-box {
+    width: 228.5%;
+}
+
+/* Checkbox smaller and aligned nicely */
+.table td input[type="checkbox"] {
+  width: auto;  
+  height: auto;
+  display: inline-block;   /* keep checkbox next to its word */
+  margin-inline-start: 8px;
+  margin-top: 0;           /* no extra gap for checkbox */
+}  
+
+/* Row height for additional vertical breathing room */
+.table tr {
+  /* Using border-spacing already adds gaps; you can add a tiny min-height if needed */  
+  /* min-height: 44px; */
+}  
+
+#full_name  {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+#full_name input[type="text"] {
+    width: 100%;
+}
+
+@media screen and (max-width: 1210px) {
+    .big-box{
+        margin-top: 700px;
+    }
+
+    #page-2-h2 {
+        font-size: 20px;
+    }
+
+    .big-box {
+        border: 1.4px solid #000;
+    }
+
+    .Information-passport {
+        padding: 5px;
+        font-size: smaller;
+    }
+
+    #full-box {
+        width: 233.5%;
+    }
+
+    #p-1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .big-box{
+        margin-top: 850px;
+    }
+
+    #page-2-h2 {
+        font-size: medium;
+    }
+
+.big-box {
+    border: 1.4px solid #000;
+}
+
+.Information-passport {
+    padding: 5px;
+    font-size: smaller;
+}
+
+#full-box {
+    width: 28.5%;
+}
+
+#endText-p {
+    font-size: small;
+}
+
+#p-1 {
+    font-size: small;
+}
+
+/* Wrapper optional: if you have a container, you can keep the offset you used
+.page { position: relative; top: 130%; padding: 16px; } */
+
+/* Head & data cells */
+
+.table td {
+  width: 500px;
+  padding: 10px 12px;              /* inner spacing inside cells */
+  vertical-align: middle;
+  color: #000;
+  /* Keep long Arabic labels readable */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Slightly dim headers if you use <th> inside rows */
+.table th {
+  font-weight: 700;
+  background: #f7f7f7;
+}
+
+
+/* ===== Inputs inside cells ===== */
+/* Make inputs consistent, with clear space from the text label */
+.table td input[type="text"],
+.table td input[type="checkbox"],
+.table td input[type="tel"],
+.table td input[type="email"],
+.table td input[type="date"],
+.option {
+    outline: none;
+  display: block;              /* force it to a new line under the label */  
+  width: 100%;
+  height: 34px;                /* consistent field height */
+  margin-top: 8px;             /* SPACE between label and input (key piece) */
+  padding: 6px 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+
+#telephone  {
+    width: 188.5%;
+    }
+
+#ID-- {
+    width: 164%;
+}
+
+#job {
+    width: 164%;
+}
+
+#full-box {
+    width: 228.5%;
+}
+
+/* Checkbox smaller and aligned nicely */
+.table td input[type="checkbox"] {
+  width: auto;  
+  height: auto;
+  display: inline-block;   /* keep checkbox next to its word */
+  margin-inline-start: 8px;
+  margin-top: 0;           /* no extra gap for checkbox */
+}  
+
+/* Row height for additional vertical breathing room */
+.table tr {
+  /* Using border-spacing already adds gaps; you can add a tiny min-height if needed */  
+  /* min-height: 44px; */
+}  
+
+#full_name  {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+#full_name input[type="text"] {
+    width: 100%;
+}
+
+
+}
+
+/* ===== Print styles (A4 friendly) ===== */
+@media print {
+  @page { size: A4; margin: 14mm; }  
+
+    html, body {
+        background: #fff;  
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }             
+
+    .table {
+        border-spacing: 10px 8px;  /* slightly tighter on paper */  
+    }  
+
+  /* Ensure inputs print with borders and spacing */
+    .table td input {
+        border: 1px solid #000;  
+        height: 32px;
+        margin-top: 6px;
+    }  
+
+    /* Avoid page-break inside critical rows */
+    .table tr {
+        page-break-inside: avoid;  
+    }  
+
+/* Visible on screen */
+.no-print { 
+    display: inline-block;
+    float: left;
+    margin: 0px 100px;
+    width: 10%;
+    height: 4vh;
+    background-color: rgb(0, 58, 26);
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* Hidden only when printing or in print preview */
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .page-1 {
+        height: 100vh;
+        zoom: 100%; /* Adjust percentage until everything fits */
+    }
+}
+
+@page {
+    size: A4; /* or letter */
+    margin: 10mm;
+}
